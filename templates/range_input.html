@@ -23,32 +23,32 @@
   <div class="container">
     <div class="input-form container">
       <h1>Enter required values to predict S11 in db</h1>
-      <form action="/" method="POST">
+      <form action="/range" method="POST">
         <div class="form-group mb-3">
-          <label>Enter Height range in [mm]* (min: 9mm, max: 11mm)</label>
-          <div class="form-input-group"><input type="text" class="form-control" name="height_start"
+          <!-- <label>Enter Height range in [mm]* (min: 9mm, max: 11mm)</label> -->
+          <div class="form-input-group"><input type="text" class="form-control" name="height_start" value="9"
               placeholder="Range start in [mm]" required />
-            <input type="text" class="form-control" name="height_end" placeholder="Range end in [mm]"
+            <input type="text" class="form-control" name="height_end" placeholder="Range end in [mm]" value="11"
               required />
-            <input type="text" class="form-control" name="height_step" placeholder="Step value" required />
+            <input type="text" class="form-control" name="height_step" placeholder="Step value" value="0. 2" required />
           </div>
         </div>
         <div class="form-group mb-3">
-          <label>Enter Radius range in [mm]* (min: 7mm, max: 9mm)</label>
-          <div class="form-input-group"><input type="text" class="form-control" name="radius_start"
+          <!-- <label>Enter Radius range in [mm]* (min: 7mm, max: 9mm)</label> -->
+          <div class="form-input-group"><input type="text" class="form-control" name="radius_start" value="7"
               placeholder="Range start in [mm]" required />
-            <input type="text" class="form-control" name="radius_end" placeholder="Range end in [mm]"
+            <input type="text" class="form-control" name="radius_end" placeholder="Range end in [mm]" value="9"
               required />
-            <input type="text" class="form-control" name="radius_step" placeholder="Step value" required />
+            <input type="text" class="form-control" name="radius_step" placeholder="Step value" value="0.2" required />
           </div>
         </div>
         <div class="form-group mb-3">
-          <label>Enter Frequency range in [GHz]* (min: 4GHz, max: 12GHz)</label>
-          <div class="form-input-group"><input type="text" class="form-control" name="freq_start"
+          <!-- <label>Enter Frequency range in [GHz]* (min: 4GHz, max: 12GHz)</label> -->
+          <div class="form-input-group"><input type="text" class="form-control" name="freq_start" value="4"
               placeholder="Range start in [mm]" required />
-            <input type="text" class="form-control" name="freq_end" placeholder="Range end in [mm]"
+            <input type="text" class="form-control" name="freq_end" placeholder="Range end in [mm]" value="12"
               required />
-            <input type="text" class="form-control" name="freq_step" placeholder="Step value" required />
+            <input type="text" class="form-control" name="freq_step" placeholder="Step value" value="1" required />
           </div>
         </div>
         <button class="btn btn-primary" type="submit">

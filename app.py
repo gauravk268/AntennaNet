@@ -17,6 +17,13 @@ def predict(height, radius, freq):
 
     return output
 
+def predict_range(height, radius, freq):
+    input_values = np.stack(np.meshgrid(height, radius, freq), -1).reshape(-1, 3)
+    return input_values
+
+
+# for single value
+
 @app.route("/", methods=['GET','POST'])
 def homepage():
     if(request.method=="POST"):
@@ -25,12 +32,18 @@ def homepage():
 
     return render_template("index.html")
 
+
+# for range values
+
 @app.route("/range", methods=['GET','POST'])
 def range_input():
     if(request.method=="POST"):
-        console.log(request.form);
-        output = predict(request.form["height"], request.form["radius"], request.form["freq"])
-        return render_template("range_input.html", result=output)
+        height = np.arange(request.form["height_start"], request.form["height_stop"]+request.form["height_step"], request.form["height_step"])
+        radius = np.arange(request.form["radius_start"], request.form["radius_stop"]+request.form["radius_step"], request.form["radius_step"])
+        freq = np.arange(request.form["freq_start"], request.form["freq_stop"]+request.form["freq_step"], request.form["freq_step"])
+
+        predict_range(height, radius, freq)
+        return render_template("range_input.html", result=1.2)
 
     return render_template("range_input.html")
 

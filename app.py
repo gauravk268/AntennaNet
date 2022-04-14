@@ -1,7 +1,8 @@
 # Import libraries
 import numpy as np
-from flask import Flask, request, jsonify, render_template, make_response
+from flask import Flask, request, jsonify, render_template, make_response, url_for
 import pickle
+import os
 import pandas as pd
 
 
@@ -28,15 +29,21 @@ def predict_range(height, radius, freq):
     return final_result
 
 
-# for single value
-@app.route("/", methods=['GET','POST'])
+# for homepage
+@app.route("/", methods=['GET'])
 def homepage():
+    return render_template("index.html")
+
+
+# for single value
+@app.route("/single", methods=['GET','POST'])
+def single():
     if(request.method=="POST"):
         print(request.form)
         output = predict(request.form["height"], request.form["radius"], request.form["freq"])
-        return render_template("index.html", result=output)
+        return render_template("single_input.html", result=output)
 
-    return render_template("index.html")
+    return render_template("single_input.html")
 
 
 # for range values

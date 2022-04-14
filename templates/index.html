@@ -20,41 +20,64 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="input-form container">
-      <h1>Enter required values to predict S11 in db</h1>
-      <form action="/" method="POST">
-        <div class="form-group mb-3">
-          <label>Height [mm]* (min: 9mm, max: 11mm)
-            <input type="text" class="form-control" name="height" placeholder="Height [mm]" required /></label>
+  <div class="container m-5 mx-auto text-white">
+    <h1 class="text-center">Adjacent Coaxial Line Fed CDRA Optimization using ML Algorithms</h3>
+      <hr />
+      <div class="container d-flex">
+        <div class="project-detail p-2">
+          <div class="p container m-2 text-center">
+            <img src="/static/antenna.png" alt="antenna-design">
+            <div class="my-5">
+              <h5>Vivek Rai<sup>1</sup>, Ankit Kumar Kushwaha<sup>1</sup>, Gaurav Kumar<sup>1</sup>, Vinay
+                Kumar<sup>1</sup>, Pinku Ranjan<sup>2</sup>, Harshit Gupta<sup>2</sup></h5>
+              <p><i class="text-italic m-2"><sup>1</sup>Department of Electronics and Communication Engineering, MNNIT
+                  Allahabad<br />
+                  Prayagraj, Uttar Pradesh, 211004, India<br />
+                  [<a href="mailto:vivekrai@mnnit.ac.in">vivekrai</a>, <a href="mailto:gavrav@mnnit.ac.in">gavrav</a>,
+                  <a href="mailto:ankitkk@mnnit.ac.in">ankitkk</a>, <a
+                    href="mailto:vinay.k@mnnit.ac.in">vinay.k</a>]@mnnit.ac.in</i></p>
+              <p><i class="text-italic m-2"><sup>2</sup>Atal Bihari Vajpayee-Indian Institute of Information Technology
+                  and Management, Gwalior<br />
+                  Gwalior, Madhya Pradesh, 474015, India<br />
+                  [<a href="mailto:pinkuranjan@iiitm.ac.in">pinkuranjan</a>, <a
+                    href="mailto:mtcn_202005@iiitm.ac.in">mtcn_202005</a>]@iiitm.ac.in</i></p>
+            </div>
+          </div>
         </div>
-        <div class="form-group mb-3">
-          <label>Radius [mm]* (min: 7mm, max: 9mm)
-            <input type="text" class="form-control" name="radius" placeholder="Radius [mm]" required /></label>
-        </div>
-        <div class="form-group mb-3">
-          <label>Frequency [GHz]* (min: 4GHz, max: 12GHz)
-            <input type="text" class="form-control" name="freq" placeholder="Frequency [mm]" required /></label>
-        </div>
-        <button class="btn btn-primary" type="submit">
-          Submit
-        </button>
-      </form>
+        <div class="antenna-detail justify-center align-center text-justify p-2">
+          <h5 class="antenna-desc text-white my-4">
+            <p> This project has been done in the partial fulfillment of the
+              requirement for the award of Bachelor of Technology in Electronics and
+              Communication Engineering to the Electronics and Communication Engineering
+              Department, Motilal Nehru National Institute of Technology, Allahabad.</p>
 
-      {% if result %}
-      <div class="alert alert-success" role="alert">
-        S11 db value of antenna for given values is: {{result}}
+            <p>This project uses the Machine Learning algorithm to compute the S11 parameter of a cylindrical dielectric
+              resonator antenna. Compared to the conventional methods, it takes much less time to generate the results
+              with
+              comparable accuracy. It gives the S11 value by inputting the height[9mm-11mm], radius[7mm-9mm], and
+              frequency[4GHz-12GHz] for the same type of antenna.</p>
+
+            <p>The antenna design of the cylindrical DRA used for this project is shown above. Cylindrical-substrate in
+              the
+              antenna is made of Al2O3 ceramic. A conductive metal ground plane is placed over the cylindrical DRA.
+              Excitation
+              is provided through a coaxial supplied line located near the cylindrical resonator. The probe is
+              positioned on
+              the z-axis.</p>
+
+            <p>This project is now open for anyone to use and generate results for their own same type of antenna.</p>
+          </h5>
+          <button class="btn btn-primary"><a href="/single">Individual Result</a></button>
+          <button class="btn btn-primary"><a href="/range">Range Result</a></button>
+        </div>
       </div>
-      {% endif %}
-    </div>
+
   </div>
 </body>
 <style>
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "Times New Roman", Times, serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #fc5c7d;
@@ -68,95 +91,39 @@
     overflow: hidden;
   }
 
-  body .container {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 700px;
+  body .container {}
+
+  .container .antenna-detail,
+  .container .project-detail {
+    flex: 1;
+    /* border: 2px solid red; */
   }
 
-  div.input-form {
-    max-width: 500px;
+  .container .antenna-detail {
     text-align: center;
-    color: azure;
   }
 
-  div.input-form .alert {
-    font-weight: 500;
+  .project-detail img {
+    width: 80%;
   }
 
-  div.input-form Form {
-    padding: 1.5rem;
-    border-radius: 5px;
-    min-width: 400px;
+  .antenna-detail .antenna-desc {
+    text-indent: 2rem;
+    text-align: justify;
   }
 
-  .input-form label {
-    display: block;
-    text-align: left;
-    padding-left: 1rem;
-    color: antiquewhite;
-    font-weight: 500;
-    font-size: 1.15rem;
+  .container .project-detail a {
+    text-decoration: none;
+    color: white;
   }
 
-  .input-form input {
-    display: block;
-    margin-top: 1rem;
-    height: 2.5rem;
-    border-radius: 200px;
-    border: 1px dotted grey;
-    padding: 0.5rem 1rem;
-    line-height: 1.5rem;
+  button.btn {
+    font-family: Arial, Helvetica, sans-serif;
   }
 
-  .input-form button {
-    border-radius: 200px;
-    padding: 0.5rem 1rem;
-    font-weight: 500;
-    margin-top: 1rem;
-  }
-
-  div.input-form {
-    max-width: 500px;
-    text-align: center;
-    color: azure;
-  }
-
-  div.input-form .alert {
-    font-weight: 500;
-  }
-
-  div.input-form Form {
-    padding: 1.5rem;
-    border-radius: 5px;
-    min-width: 400px;
-  }
-
-  .input-form label {
-    display: block;
-    text-align: left;
-    padding-left: 1rem;
-    color: antiquewhite;
-    font-weight: 500;
-    font-size: 1.15rem;
-  }
-
-  .input-form input {
-    display: block;
-    margin-top: 1rem;
-    height: 2.5rem;
-    border-radius: 200px;
-    border: 1px dotted grey;
-    padding: 0.5rem 1rem;
-    line-height: 1.5rem;
-  }
-
-  .input-form button {
-    border-radius: 200px;
-    padding: 0.5rem 1rem;
-    font-weight: 500;
-    margin-top: 1rem;
+  button.btn a {
+    text-decoration: none;
+    color: white;
   }
 </style>
 

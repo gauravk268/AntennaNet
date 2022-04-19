@@ -20,32 +20,29 @@
 </head>
 
 <body>
-  <div class="container m-5 mx-auto text-white">
+  <div class="text-white container my-2">
     <h1 class="text-center">Adjacent Coaxial Line Fed CDRA Optimization using ML Algorithms</h3>
       <hr />
-      <div class="container d-flex">
-        <div class="project-detail p-2">
-          <div class="p container m-2 text-center">
-            <img src="/static/antenna.png" alt="antenna-design">
-            <div class="my-5">
-              <h5>Vivek Rai<sup>1</sup>, Ankit Kumar Kushwaha<sup>1</sup>, Gaurav Kumar<sup>1</sup>, Vinay
-                Kumar<sup>1</sup>, Pinku Ranjan<sup>2</sup>, Harshit Gupta<sup>2</sup></h5>
-              <p><i class="text-italic m-2"><sup>1</sup>Department of Electronics and Communication Engineering, MNNIT
-                  Allahabad<br />
-                  Prayagraj, Uttar Pradesh, 211004, India<br />
-                  [<a href="mailto:vivekrai@mnnit.ac.in">vivekrai</a>, <a href="mailto:gavrav@mnnit.ac.in">gavrav</a>,
-                  <a href="mailto:ankitkk@mnnit.ac.in">ankitkk</a>, <a
-                    href="mailto:vinay.k@mnnit.ac.in">vinay.k</a>]@mnnit.ac.in</i></p>
-              <p><i class="text-italic m-2"><sup>2</sup>Atal Bihari Vajpayee-Indian Institute of Information Technology
-                  and Management, Gwalior<br />
-                  Gwalior, Madhya Pradesh, 474015, India<br />
-                  [<a href="mailto:pinkuranjan@iiitm.ac.in">pinkuranjan</a>, <a
-                    href="mailto:mtcn_202005@iiitm.ac.in">mtcn_202005</a>]@iiitm.ac.in</i></p>
-            </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 text-center"><img src="/static/antenna.png" alt="antenna-design">
+          <div class="py-5">
+            <h5>Vivek Rai<sup>1</sup>, Ankit Kumar Kushwaha<sup>1</sup>, Gaurav Kumar<sup>1</sup>, Vinay
+              Kumar<sup>1</sup>, Pinku Ranjan<sup>2</sup>, Harshit Gupta<sup>2</sup></h5>
+            <p><i class="text-italic"><sup>1</sup>Department of Electronics and Communication Engineering, MNNIT
+                Allahabad<br />
+                Prayagraj, Uttar Pradesh, 211004, India<br />
+                [<a href="mailto:vivekrai@mnnit.ac.in">vivekrai</a>, <a href="mailto:gavrav@mnnit.ac.in">gavrav</a>,
+                <a href="mailto:ankitkk@mnnit.ac.in">ankitkk</a>, <a
+                  href="mailto:vinay.k@mnnit.ac.in">vinay.k</a>]@mnnit.ac.in</i></p>
+            <p><i class="text-italic"><sup>2</sup>Atal Bihari Vajpayee-Indian Institute of Information Technology
+                and Management, Gwalior<br />
+                Gwalior, Madhya Pradesh, 474015, India<br />
+                [<a href="mailto:pinkuranjan@iiitm.ac.in">pinkuranjan</a>, <a
+                  href="mailto:mtcn_202005@iiitm.ac.in">mtcn_202005</a>]@iiitm.ac.in</i></p>
           </div>
         </div>
-        <div class="antenna-detail justify-center align-center text-justify p-2">
-          <h5 class="antenna-desc text-white my-4">
+        <div class="col-lg-6 col-md-12 text-center px-4">
+          <h5 class="antenna-desc text-white">
             <p> This project has been done in the partial fulfillment of the
               requirement for the award of Bachelor of Technology in Electronics and
               Communication Engineering to the Electronics and Communication Engineering
@@ -71,10 +68,53 @@
           <button class="btn btn-primary"><a href="/range">Range Result</a></button>
         </div>
       </div>
-
   </div>
 </body>
 <style>
+  p {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 992px) {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 992px) {
+    h5 {
+      font-size: 1.4.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h5 {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h5 {
+      font-size: 1.15rem;
+    }
+  }
+
   body {
     margin: 0;
     font-family: "Times New Roman", Times, serif;
@@ -88,36 +128,26 @@
     background-size: cover;
     min-height: 700px;
     scroll-behavior: smooth;
-    overflow: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* overflow: hidden; */
   }
 
-  body .container {}
-
-  .container .antenna-detail,
-  .container .project-detail {
-    flex: 1;
-    /* border: 2px solid red; */
-  }
-
-  .container .antenna-detail {
-    text-align: center;
-  }
-
-  .project-detail img {
+  img {
     width: 80%;
   }
 
-  .antenna-detail .antenna-desc {
+  .antenna-desc {
     text-indent: 2rem;
     text-align: justify;
   }
 
-  .container .project-detail a {
+  a {
     text-decoration: none;
     color: white;
   }
 
-  button.btn {
+  button.bt n {
     font-family: Arial, Helvetica, sans-serif;
   }
 

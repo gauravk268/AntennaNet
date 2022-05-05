@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Adjacent Coaxial Line Fed CDRA Optimization using ML Algorithms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+This project has been done in the partial fulfillment of the requirement for the award of Bachelor of Technology in Electronics and Communication Engineering to the Electronics and Communication Engineering Department, Motilal Nehru National Institute of Technology, Allahabad.
 
-## Available Scripts
+<b>This project uses the Machine Learning algorithm to compute the S11 parameter of a cylindrical dielectric resonator antenna. Compared to the conventional methods, it takes much less time to generate the results with comparable accuracy. It gives the S11 value by inputting the height[9mm-11mm], radius[7mm-9mm], and frequency[4GHz-12GHz] for the same type of antenna.</b>
 
-In the project directory, you can run:
+The antenna design of the cylindrical DRA used for this project is shown above. Cylindrical-substrate in the antenna is made of Al2O3 ceramic. A conductive metal ground plane is placed over the cylindrical DRA. Excitation is provided through a coaxial supplied line located near the cylindrical resonator. The probe is positioned on the z-axis.
 
-### `npm start`
+## Machine Learning Algorithms Used
+- Linear Regression
+- KNN (K-Nearest Neighbors)
+- SVM (Support Vector Machine)
+- Decision Tree
+- Random Forest
+- XG Boost
+- Deep Neural Network
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Website
+We have deployed the best model that is open for anyone to use and generate results for their own same type of antenna. </br>
+[AntennaNet](https://antenna-net.herokuapp.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributors
+- [Vivek Rai](https://github.com/Blazer-007)
+- [Gaurav Kumar](https://github.com/gauravk268)
+- [Ankit Kr. Kushwaha](https://github.com/ankitenf)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Report Issue
+If you find any issue in code, please raise [here](https://github.com/gauravk268/AntennaNet/issues)

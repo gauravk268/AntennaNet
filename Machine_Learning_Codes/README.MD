@@ -4,8 +4,7 @@
 #### 2. KNN
 ![KNN (N = 3)](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/KNN%20(N%20%3D%203).png) 
 ![KNN (N = 5)](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/KNN%20(N%20%3D%205).png)
-#### 3. SVM
-![NuSVR](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/NuSVR.png)
+#### 3. SVR
 ![SVR](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/SVR.png)
 #### 4. Decision Tree
 ![Decision Tree](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/Decision%20Tree.png)

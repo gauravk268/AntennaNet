@@ -13,6 +13,7 @@
 #### 6. XGBoost
 ![XGBoost](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/XGBoost.png)
 #### 7. DNN
+![DNN Architecture](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/DNN%20Architecture.png)
 ![DNN Training Loss](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/Training_Loss_DNN.jpg)
 ![DNN Validation Loss](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/Validation_Loss_DNN.jpg)
 ![DNN](https://raw.githubusercontent.com/gauravk268/AntennaNet/master/Machine_Learning_Codes/plots/DNN.png)
